@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    body {
+      background: linear-gradient(to right, #358ea2, #f76371);
+    }
+
     .box {
       background-color: pink;
       width: 300px;
@@ -19,34 +23,47 @@
       overflow-x: hidden;
     }
 
+    /* 
     body {
       background-color: black;
-    }
+    } */
 
     .container {
       width: 500px;
       height: 200px;
       background-color: red;
       color: white;
-
+      white-space: nowrap;
 
     }
 
     .container p {
 
-      text-overflow: clip;
+      /* text-overflow: clip;
       text-overflow: ellipsis;
-      text-overflow: "Read More";
-      white-space: nowrap;
-      overflow: hidden;
+      text-overflow: "Read More"; */
+      white-space: inherit;
+      /* overflow: hidden; */
 
 
 
+    }
+
+    .show {
+      visibility: visible;
+      visibility: hidden;
+      /* display: none; */
     }
   </style>
 </head>
 
 <body>
+
+  <div class="show">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto consequatur error, similique commodi ipsa
+      voluptate libero? Excepturi, ut enim voluptatibus nostrum sunt sapiente atque odit minima et pariatur. Quod,
+      dolor!</p>
+  </div>
   <!-- <div class="box">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum mollitia quidem, facilis totam eveniet accusamus
       possimus alias excepturi, illum aperiam impedit fuga enim veniam quo quam, dolorum libero amet modi!</p>
