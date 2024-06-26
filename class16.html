@@ -18,6 +18,7 @@
       padding: 10px;
       display: flex;
       justify-content: space-around;
+
       /* position: sticky; */
       /* top: 30px;
       bottom: 0; */
@@ -25,6 +26,7 @@
       width: 100%;
 
       position: static;
+      position: fixed;
       top: 0px;
 
     }
@@ -64,65 +66,19 @@
       border-radius: 10px;
       border: 1px solid white;
     }
+
+    .paraDiv {
+      position: absolute;
+      background-color: aqua;
+      z-index: -1;
+
+    }
   </style>
 </head>
 
 <body>
 
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
-  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eveniet quam explicabo. Accusantium sequi
-    esse id, officia odit minima doloremque laudantium pariatur, laborum asperiores repellendus, nulla libero
-    reprehenderit perspiciatis nihil.</p>
+
   <nav>
     <div class="logo">Ganesh <span style="color: blueviolet;">Dutt</span></div>
     <ul>
@@ -137,59 +93,99 @@
       <button class="btn">Search</button>
     </form>
   </nav>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, earum ducimus fuga officiis nostrum dolore illum?
+    Nulla tempora, consectetur et officiis eveniet labore, accusantium voluptates ducimus iste ea, cumque culpa!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, earum ducimus fuga officiis nostrum dolore illum?
+    Nulla tempora, consectetur et officiis eveniet labore, accusantium voluptates ducimus iste ea, cumque culpa!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, earum ducimus fuga officiis nostrum dolore illum?
+    Nulla tempora, consectetur et officiis eveniet labore, accusantium voluptates ducimus iste ea, cumque culpa!</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, earum ducimus fuga officiis nostrum dolore illum?
+    Nulla tempora, consectetur et officiis eveniet labore, accusantium voluptates ducimus iste ea, cumque culpa!</p>
 
+  <div class="paraDiv">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro labore asperiores quasi! At, assumenda dolor
+      reiciendis labore sapiente ducimus officia deleniti! Rem est quas sint quibusdam autem id itaque sapiente?
 
-
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aut ex nostrum, incidunt iure nihil laboriosam,
-    molestias error voluptate animi mollitia aliquid qui expedita eaque omnis quasi doloremque nam non.</p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sit quaerat eligendi excepturi quasi, iste magnam
+      nihil quis aperiam eos a doloribus debitis tenetur deleniti, veniam vero? Optio, asperiores nobis?
+    </p>
+  </div>
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo illum aspernatur, officiis, cupiditate deserunt
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    quam!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo illum aspernatur, officiis, cupiditate deserunt
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    quam!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo illum aspernatur, officiis, cupiditate deserunt
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    quam!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo illum aspernatur, officiis, cupiditate deserunt
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    quam!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo illum aspernatur, officiis, cupiditate deserunt
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    quam!
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo illum aspernatur, officiis, cupiditate deserunt
+    vitae, iusto magni ad voluptate ipsum nam commodi accusantium. Eligendi tempora cupiditate explicabo vel dolore
+    quam!
+  </p>
 </body>
 
 </html>
