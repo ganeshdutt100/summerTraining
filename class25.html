@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <style>
+    * {
+
+      margin: 0;
+      padding: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      color: white;
+      background-color: black;
+      padding: 20px;
+    }
+
+    .list {
+      display: none;
+      list-style: none;
+    }
+
+    @media only screen and (min-width:700px) {
+      .list {
+        display: flex;
+        gap: 30px;
+      }
+
+      .bar {
+        display: none;
+
+      }
+    }
+
+
+    /* section 1 */
+
+    .section1 {
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+      margin-left: 40px;
+    }
+
+    .section1 img {
+      width: 300px;
+      margin: auto;
+      border-radius: 10%;
+    }
+
+    @media only screen and (min-width:700px) {
+      .section1 {
+
+        flex-direction: row;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">Ganesh Dutt</div>
+    <div class="list">
+      <li>Home</li>
+      <li>About</li>
+      <li>Cotnact</li>
+      <li>Services</li>
+      <li>Project</li>
+    </div>
+    <i class="fa-solid fa-bars-staggered bar"></i>
+  </nav>
+
+
+  <div class="section1">
+    <img
+      src="https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      alt="">
+
+    <div class="text">
+      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, omnis cum? Modi ex ipsam aliquid cupiditate
+        nobis mollitia laboriosam explicabo quasi laborum labore. Voluptatibus eos deserunt minus id praesentium
+      </p>
+
+    </div>
+</body>
+
+</html>
