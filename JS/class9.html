@@ -86,12 +86,47 @@ document.writeln( FunctionName(21,21));
 // }
 // fun();
 
-let arr = () => document.writeln('hello world ');
+// let arr = () => document.writeln('hello world ');
 
-arr();        
+// arr();        
 
 
 
+
+
+// function funName(para){
+//    document.writeln("Hello " + para);
+   
+//      }
+//      funName("Mansi")
+
+
+function Emp(id,name){ 
+                 this.id = id; 
+                 this.name = name; 
+        } 
+
+
+        function pEmp(id, name ){
+                    Emp.call(this,id,name);
+        }  
+        function tEmp(id, name ){
+            Emp.call(this,id,name);
+                  
+        }  
+ 
+
+        let Value1 = new pEmp(1,"Mansi");
+        let Value2 = new pEmp(2,"Priya");
+
+        document.writeln(Value1.name+ " : "+ Value1.id
+        );
+        document.writeln(Value2.name+ " : "+ Value2.id
+        );
+        
+
+
+       
         
 
 
