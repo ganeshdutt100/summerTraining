@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let website = {
+            name: "Maanu ",
+            functionName : function(){
+                return this.name;
+            }
+        
+        }       
+            let website2  = {
+                name : " Ganesh Dutt",
+            }
+
+
+            let a = website.functionName;
+
+            // document.writeln(a);
+            
+            let b = a.bind(website2);
+            document.writeln(b());
+            
+  
+
+
+    </script>
+    
+</body>
+</html>
