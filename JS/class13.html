@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let obj = {
+        //     name: "John",
+        //     age: 30,
+        //     city: "New York"
+        // }
+
+        // document.writeln(obj.city);
+        
+
+        function funName(name,age){
+          this.name = name;
+          this.age = age;
+        }
+
+        let a = new funName("John",30);
+        let b = new funName("Mansi",19);
+
+
+        for(let x  in a){
+            document.writeln(x +" "+ a[x] + "<br>");
+        }
+
+        // document.writeln(a.name + " " + a.age);
+        // document.writeln('<br>' );
+        
+        // document.writeln(b.name + " " + b.age);
+    </script>
+</body>
+</html>
