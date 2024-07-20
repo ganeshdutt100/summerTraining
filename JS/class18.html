@@ -16,18 +16,29 @@
     <button onclick="fun()">Click me </button>
     <button onclick="onChange()">Click me 2 </button>
 
+
+    <input type="text" id="value1">
     <script>
+ document.getElementById('value1').value
 
-        function onChange(){
- document.getElementById('demo').innerText = "Hello Ganesh"
-        }
+//         function onChange(){
+//  document.getElementById('demo').innerText = "Hello Ganesh"
+//         }
         
-function fun(){
+// function fun(){
 
 
- document.getElementById('demo').innerText = "Hello Mansi"
-}
+//  document.getElementById('demo').innerText = "Hello Mansi"
+// }
+
+
+let num1 = Number(prompt("Enter your first number "))
+let num2 = Number(prompt("Enter your second number "))
+let result =  num1 + num2;
         
+
+document.writeln(result);
+
     </script>
 </body>
 </html>

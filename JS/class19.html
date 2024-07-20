@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num = Number(prompt("Enter your first  number"))
+        let op = prompt("Enter your op  number")
+        let num2 = Number(prompt("Enter your Second  number"))
+
+
+        switch (op) {
+            case '+':
+                alert(num + num2);
+                break;
+            case '-':
+                alert(num - num2);
+                break;
+            case '*':
+                alert(num * num2);
+                break;
+            case '/':
+                if(num2 === 0){
+                    alert("Cannot divide by zero!");
+                } else {
+                    alert(num / num2);
+                }
+                break;
+            default:
+                alert("Invalid operator!");
+        }
+
+ 
+    </script>
+</body>
+</html>
