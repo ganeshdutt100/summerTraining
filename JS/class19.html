@@ -6,32 +6,61 @@
     <title>Document</title>
 </head>
 <body>
+  <pre>
+
+
+    <input type="text" placeholder="Enter your first number  " id="num1"> 
+    <input type="text" placeholder="Enter your op number " id="op">
+    <input type="text" placeholder="Enter your Second number " id="num2">
+       <p id="result">Loading.....</p>
+    <input type="button" onclick="cal()" value="Cal">
+
+</pre>
     <script>
-        let num = Number(prompt("Enter your first  number"))
-        let op = prompt("Enter your op  number")
-        let num2 = Number(prompt("Enter your Second  number"))
+
+
+function cal(){
+    let num =  document.getElementById('num1').value;
+        let op =  document.getElementById('op').value;
+        let num2 =  document.getElementById('num2').value;
+
+
+        let Result =  document.getElementById('result');
 
 
         switch (op) {
             case '+':
-                alert(num + num2);
+            Result.innerText =  num + num2;
+                // alert(num + num2);
                 break;
             case '-':
-                alert(num - num2);
+            Result.innerText =  num - num2;
+                // alert(num - num2);
                 break;
             case '*':
-                alert(num * num2);
+            Result.innerText =  num * num2;
+                // alert(num * num2);
                 break;
             case '/':
                 if(num2 === 0){
-                    alert("Cannot divide by zero!");
+                    Result.innerText ="Cannot divide by zero!";
                 } else {
-                    alert(num / num2);
+                    // alert(num / num2);
+                    Result.innerText =num / num2;
                 }
                 break;
             default:
-                alert("Invalid operator!");
+            Result.innerText =  "Invalid operator!";
+                // alert("Invalid operator!");
         }
+        
+}
+       
+        
+    
+
+
+        
 
  
     </script>
