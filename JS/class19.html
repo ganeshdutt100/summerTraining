@@ -20,9 +20,9 @@
 
 
 function cal(){
-    let num =  document.getElementById('num1').value;
-        let op =  document.getElementById('op').value;
-        let num2 =  document.getElementById('num2').value;
+    let num = Number( document.getElementById('num1').value);
+        let op = document.getElementById('op').value;
+        let num2 = Number( document.getElementById('num2').value)
 
 
         let Result =  document.getElementById('result');
@@ -30,7 +30,7 @@ function cal(){
 
         switch (op) {
             case '+':
-            Result.innerText =  num + num2;
+            Result.innerText =  num+num2;
                 // alert(num + num2);
                 break;
             case '-':
