@@ -4,18 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+ body{
+    background:url('https://img.freepik.com/free-vector/math-science-concept-with-school-lesson-items-retro-cartoon-style_1284-8084.jpg?t=st=1721472320~exp=1721475920~hmac=0fb470f80e860a0850b9eb66763b6e0539b556ad5ddafd7f09f659a23d3abf09&w=740') ;
+ }
+        .calStart{
+            text-align: center;
+            width: 300px;
+            margin: 200px auto;
+            padding: 20px;
+            background-color: #00000063;
+            border-radius: 5px;
+            backdrop-filter: blur(20px);
+        }
+
+        input{
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom:2px solid rgb(255, 255, 255) ;
+            outline: none;
+              /* border-radius: 20px; */
+              background-color: transparent;
+              padding: 10px 10px;
+              color: white;
+        }
+
+         .btn{
+            background-color: rgb(0, 94, 255);
+            border: none;
+            padding: 10px 40px;
+            border-radius: 20px;
+            color: white;
+         }
+
+         input::placeholder{
+            color: white;
+         }
+       
+         p{
+            color: white;
+            text-decoration: underline;
+         }
+    </style>
 </head>
 <body>
-  <pre>
+ 
+ <div class="calStart">
+    <input type="text" placeholder="Enter your first number  " id="num1">  <br> <br>
+    <input type="text" placeholder="Enter your op number " id="op"> <br> <br>
+    <input type="text" placeholder="Enter your Second number " id="num2"> 
+       <p id="result">Result</p>
+    <input class="btn" type="button" onclick="cal()" value="Cal">
+ </div>
+
+     
 
 
-    <input type="text" placeholder="Enter your first number  " id="num1"> 
-    <input type="text" placeholder="Enter your op number " id="op">
-    <input type="text" placeholder="Enter your Second number " id="num2">
-       <p id="result">Loading.....</p>
-    <input type="button" onclick="cal()" value="Cal">
-
-</pre>
     <script>
 
 
