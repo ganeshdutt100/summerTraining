@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="fun('rock')">rock </button>
+    <button onclick="fun('paper')">paper </button>
+    <button onclick="fun('scissor')">scissor </button>
+
+    <p id="demo">Loading...</p>
+    <script>
+       
+       function fun(player){
+
+let game = ['rock', 'paper', 'scissor'];
+            let computerChoice = game[Math.floor(Math.random()*3)];
+
+            if(player == computerChoice){
+                // alert();
+
+                 document.getElementById('demo').innerText = "Tie this game!"
+                
+                
+            }
+            else if((player == "rock" && computerChoice == "scissor") || 
+                    (player == "paper" && computerChoice == "rock") || 
+                    (player == "scissor" && computerChoice == "paper"))
+            {
+             
+                // alert( `You win! You chose ${player} and computer chose ${computerChoice}.` );
+                  document.getElementById('demo').innerText = "You win!"
+            
+             }
+             else{
+              
+                // alert(`Computer wins! Computer chose ${computerChoice} and you chose ${player}.`);
+                document.getElementById('demo').innerText = "Computer wins!"
+             }
+     
+      
+
+  
+      
+       }
+
+
+  
+    </script>
+
+    <!-- <button onclick="fun1('ganesh')">button 1</button> -->
+</body>
+</html>
