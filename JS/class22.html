@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Game </h1>
+    <input type="text" placeholder="Enter your number. " id="userInput">
+    <button onclick="fun()">click me </button>
+
+    <p id="result">loading....</p>
+
+
+    <script>
+        let a = Math.floor( 1 + Math.random()*10)
+        // console.log(a);
+
+        let userCount  = 0;
+
+
+        function fun(){
+            let result  =  document.getElementById('result'); 
+
+                let userInput =  document.getElementById('userInput').value
+  
+
+    if( userInput < 0 || userInput > 10 || isNaN(userInput)){
+        result.innerHTML =  " this is a wrong number  : "
+userCount++;
+
+    }
+     else if (userInput  == a ){
+ result.innerHTML = `Congratulations! You guessed the correct number! with in : ${userCount} times and Computer Choose   :  ${a}`;
+ }
+
+ if(userInput < a){
+    result.innerHTML =  `small ${a}`;
+    count++;
+ }
+  else if(userInput  >  a){
+    result.innerHTML =  `heigh :   ${a}`;
+    count++;
+ }
+        }
+        
+        
+    </script>
+</body>
+</html>
