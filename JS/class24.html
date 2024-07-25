@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+
+
+    <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facilis, atque sequi fugiat a dolorem quam optio voluptatum debitis, neque sapiente explicabo unde laboriosam repudiandae. Facere maiores totam mollitia ut!
+    </p>
+
+    <button onclick="addColor()">Click me </button>
+
+
+    <script>
+ 
+ 
+
+        function addColor(){
+            let a =  document.getElementById('demo')
+            // a.innerText = "Hello world"
+            a.classList.add('para')
+        }
+    </script>
+</body>
+</html>
