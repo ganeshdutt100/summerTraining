@@ -8,27 +8,49 @@
         .para{
             color: red;
         }
+
+        .box{
+ background-color: hsl(0, 100%, 35%);
+ height: 300px;
+ width: 300px;
+        }
     </style>
 </head>
 <body>
 
 
-
+<!-- 
     <p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos facilis, atque sequi fugiat a dolorem quam optio voluptatum debitis, neque sapiente explicabo unde laboriosam repudiandae. Facere maiores totam mollitia ut!
     </p>
 
-    <button onclick="addColor()">Click me </button>
+    <button onclick="addColor()">Click me </button> -->
+<p id="demo">loding...</p>
+ <button onclick="fun()">Click me </button>
 
+ <div class="box">
 
+ </div>
     <script>
- 
+
+        function fun(){
+            let a = Math.floor(Math.random()*9999)
+            document.getElementById('demo').innerText= a;
+           
+        }
+
+        // 0. *9999
+
+        // 6999.3
+
  
 
-        function addColor(){
-            let a =  document.getElementById('demo')
-            // a.innerText = "Hello world"
-            a.classList.add('para')
-        }
+ 
+
+        // function addColor(){
+        //     let a =  document.getElementById('demo')
+        //     // a.innerText = "Hello world"
+        //     a.classList.add('para')
+        // }
     </script>
 </body>
 </html>

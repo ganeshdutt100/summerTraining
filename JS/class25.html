@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding: 20px;
+            font-size: 30px;
+            border-radius: 20px;
+            color: white;
+        }
+        .btn {
+ width: 6.5em;
+ height: 2.3em;
+ margin: 0.5em;
+ background: black;
+ color: white;
+ border: none;
+ border-radius: 0.625em;
+ font-size: 20px;
+ font-weight: bold;
+ cursor: pointer;
+ position: relative;
+ z-index: 1;
+ overflow: hidden;
+}
+
+button:hover {
+ color: black;
+}
+
+button:after {
+ content: "";
+ background: white;
+ position: absolute;
+ z-index: -1;
+ left: -20%;
+ right: -20%;
+ top: 0;
+ bottom: 0;
+ transform: skewX(-45deg) scale(0, 1);
+ transition: all 0.5s;
+}
+
+button:hover:after {
+ transform: skewX(-45deg) scale(1, 1);
+ -webkit-transition: all 0.5s;
+ transition: all 0.5s;
+}
+
+.main{
+    margin: 200px auto;
+    padding-top: 40px;
+    text-align: center;
+    width: 500px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.136);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+}
+    </style>
+</head>
+<body>
+    
+  <div class="main">
+    <input type="text" id="inputV" disabled> <br>
+
+    <button class="btn"onclick="fun()" > Button
+    </button>
+  </div>
+    
+
+    <script>
+
+ 
+
+       function fun(){
+
+        let randomNumber  = Math.floor(Math.random()*16777215);
+        let strRandom = "#"+randomNumber.toString(16);
+        document.getElementById('inputV').value = strRandom;
+       
+       
+        document.body.style.backgroundColor= strRandom;
+        
+       }
+       fun();
+    </script>
+</body>
+</html>
