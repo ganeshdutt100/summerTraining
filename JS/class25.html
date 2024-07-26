@@ -79,12 +79,16 @@ button:hover:after {
        function fun(){
 
         let randomNumber  = Math.floor(Math.random()*16777215);
-        let strRandom = "#"+randomNumber.toString(16);
-        document.getElementById('inputV').value = strRandom;
+        let randomNumber2  = Math.floor(Math.random()*16777215);
+        let strRandom1 = "#"+randomNumber.toString(16);
+        let strRandom2 = "#"+randomNumber2.toString(16);
+        let RandomColor = `linear-gradient( ${strRandom1} , ${strRandom2} )`; 
+        document.getElementById('inputV').value = RandomColor;
        
        
-        document.body.style.backgroundColor= strRandom;
-        
+        document.body.style.background= RandomColor;
+         console.log(RandomColor);
+         
        }
        fun();
     </script>
