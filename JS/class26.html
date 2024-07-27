@@ -7,23 +7,54 @@
 </head>
 <body>
   <button onclick="fun()">Alert button</button>
+  <p id="demo"></p>
     <script>
 //    function fun(){
 //         alert("button clicked")
 //     }
-   function fun(){
-     let a =   window.confirm("Are you sure you want to proceed?")      
-  if(a){
-    // console.log("ok");
-    // document.writeln('ok');
-    alert("ok")
+//    function fun(){
+//      let a =   window.confirm("Are you sure you want to proceed?")      
+//   if(a){
+//     // console.log("ok");
+//     // document.writeln('ok');
+//     alert("ok")
     
     
-  }else{
-    console.log("cancel");
-    alert("cancel");
-  }
-    }
+//   }else{
+//     console.log("cancel");
+//     alert("cancel");
+//   }
+//     }
+
+
+// function fun(){
+//     let a = prompt("Enter your email address")
+//     // document.writeln(a);
+//      document.getElementById('demo').innerHTML= a
+    
+    
+
+// }
+
+//  function fun1(){
+//     console.log("Welcome");
+       
+//  }
+//  setTimeout(fun1(),3000)
+
+
+
+let a = setTimeout(()=>{
+    console.log("Welcome");
+},3000)
+
+
+
+setTimeout( ()=>{
+    console.log("Ganesh dutt");
+    
+},5000);
+
     </script>
 </body>
 </html>
