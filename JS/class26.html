@@ -44,16 +44,30 @@
 
 
 
-let a = setTimeout(()=>{
-    console.log("Welcome");
-},3000)
+// let a = setTimeout(()=>{
+//     console.log("Welcome");
+// },3000)
 
 
 
-setTimeout( ()=>{
-    console.log("Ganesh dutt");
+// setTimeout( ()=>{
+//     console.log("Ganesh dutt");
     
-},5000);
+// },5000);
+
+// function fun2(value){
+//     console.log("Ganesh dutt" +  value);
+// }
+// setTimeout(fun2,3000 , " : hello")
+
+function fun4(){
+    let date = new Date();
+    console.log(date.toLocaleTimeString());
+     document.getElementById('demo').innerHTML = date.toLocaleString();
+    
+}
+
+ setInterval("fun4()",1000)
 
     </script>
 </body>
